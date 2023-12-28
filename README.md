@@ -1,10 +1,12 @@
-# Create a Spam Filtering with Naive Bayes Classifier
-In this project, we will implement a simple Spam Filtering using Naive Bayes Classifier.
+# Spam Filtering with Naive Bayes Classifier
+
+## Introduction
+This project implements a simple Spam Filter using the Naive Bayes Classifier. The Naive Bayes algorithm is a probabilistic classifier that applies Bayes' theorem with strong independence assumptions between features. It is particularly suited for spam filtering by evaluating the likelihood of certain words appearing in spam versus non-spam emails.
 
 ## Dataset description:
-The data in this project was taken from The data in this project was taken from [Exercise 6: Naive Bayes - Machine Learning - Andrew Ng](http://openclassroom.stanford.edu/MainFolder/DocumentPage.php?course=MachineLearning&doc=exercises/ex6/ex6.html).
+The data in this project was taken from [Exercise 6: Naive Bayes - Machine Learning - Andrew Ng](http://openclassroom.stanford.edu/MainFolder/DocumentPage.php?course=MachineLearning&doc=exercises/ex6/ex6.html).
 
-In this example, the data has been processed, and is a subset of the [Ling-Spam dataset] (https://www.kaggle.com/datasets/mandygu/lingspam-dataset).
+In this example, the data has been processed, and is a subset of the [Ling-Spam dataset](https://www.kaggle.com/datasets/mandygu/lingspam-dataset).
 
 This data set includes a total of 960 English emails, separated into training and testing sets at a ratio of 700:260, 50% of each set are spam emails.
 
@@ -76,5 +78,7 @@ where the first number is the index of the email, starting from 1; The second nu
 If we represent the feature vector of each email as a row vector of dictionary length (2500), then the first line says that the 564th component of this vector is equal to 1. Similarly, the 19th component of this vector equal to 1. If not present, other components are defaulted to 0.
 
 Based on this information, we can proceed with programming with the sklearn library.
+
+## Results
 
 
