@@ -79,5 +79,9 @@ If we represent the feature vector of each email as a row vector of the dictiona
 With this information, we can proceed with the implementation using the `sklearn` library.
 
 ## Results
+To evaluate the performance of our classifiers, we used the `accuracy_score` function from `sklearn.metrics`, which calculates the proportion of the total number of predictions that were correct. Here are the results for the test accuracy of the two Naive Bayes classifiers implemented:
 
+1. **Multinomial Naive Bayes Classifier Test Accuracy**: 98.08%
+2. **Bernoulli Naive Bayes Classifier Test Accuracy**: 85.38%
 
+The accuracy metric here reflects the classifiers' ability to correctly label emails as spam or non-spam. As we can see, the Multinomial Naive Bayes Classifier significantly outperformed the Bernoulli Naive Bayes Classifier. This suggests that the Multinomial approach, which considers the frequency of the words, is more suitable for this dataset where the distinction between spam and non-spam can be influenced by the number of times certain words appear. On the other hand, the Bernoulli Classifier, which merely accounts for the presence or absence of features, may be less sensitive to these nuances.
