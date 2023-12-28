@@ -65,9 +65,9 @@ train-labels.txt
 ```
 These correspond to the data for the training and testing sets. The file `train-features-50.txt` contains data from a condensed training set of only 50 emails.
 
-Each `\*labels\*.txt` file contains multiple lines, with each line consisting of a single character, 0 or 1, indicating whether the email is non-spam or spam, respectively.
+Each `*labels*.txt` file contains multiple lines, with each line consisting of a single character, 0 or 1, indicating whether the email is non-spam or spam, respectively.
 
-Each `\*features\*.txt` file contains multiple lines, each with three numbers, for example:
+Each `*features*.txt` file contains multiple lines, each with three numbers, for example:
 ```
 1 564 1
 1 19 2
